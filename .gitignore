@@ -1,0 +1,12 @@
+venv
+db.json
+__pycache__
+data/*
+*.json
+*.json.lock
+*.db
+*.sqlite
+*.sqlite3
+cache/*
+*.jpg
+.ipynb_checkpoints

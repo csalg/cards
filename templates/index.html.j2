@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project viewer</title>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.item {
+    background-color: white;
+    margin: 1em;
+    border: 1px gray solid;
+    padding: 1em;
+}
+img {
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+<div class="container">
+    {% for card in cards %}
+    <div class="item">
+    {{card}}
+    </div>
+    {% endfor %}
+</div>
+
+</body>
+</html>
