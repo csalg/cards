@@ -2,12 +2,12 @@
 from flask import Flask, render_template, request
 import re
 
-from repo import ItemRepository, now
+# from repo import ItemRepository, now
 from model import Card
 
 app = Flask(__name__)
 #FILENAME = 'hot-bodies.project'
-FILENAME = 'permanent-style.project'
+FILENAME = 'lopez-aragon.cards'
 
 # TODO Have an index with project files from the project folder
 # TODO Have a viewer for any file
