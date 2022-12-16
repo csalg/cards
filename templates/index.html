@@ -17,12 +17,16 @@
             {% for card_file in card_files %}
             <tr>
                 <td>
-                    <a href="/card?path={{card_file.path}}">
-                        {{card_file.path}}
-                    </a>
-
-                    </td>
-                    <td>{{card_file.name}}</td>
+                  <a href="/card?path={{card_file.path}}">
+                    {{card_file.path}}
+                  </a>
+                </td>
+                <td>{{card_file.name}}</td>
+                <td>
+                  <a href="/card?path={{card_file.path}}&columns=2">
+                    2 cols
+                  </a>
+                </td>
                 </tr>
             {% endfor %}
 
